@@ -1,5 +1,17 @@
+{# Rozszerzamy nasz index.html o base.html #}
 {% extends 'base.html' %}
 {% block title %}Home Page{% endblock %}
+
+{% block navbar %}
+    {# super sciagnie html znajdujacego sie miedzy blokiem 
+        navbar w base html #}
+    {{super()}}
+{% endblock %}
+
 {% block content %}
 <h1>Hello, World!</h1>
+{% endblock %}
+
+{% block footer %}
+        
 {% endblock %}
